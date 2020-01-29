@@ -1,4 +1,4 @@
-[![Travis (.org) branch](https://img.shields.io/travis/lguzzon-DOCKER/coder-server/master)](https://travis-ci.org/travis/lguzzon-DOCKER/coder-server/)
+[![Travis (.org) branch](https://img.shields.io/travis/lguzzon-DOCKER/coder-server/master)](https://travis-ci.org/travis/lguzzon-DOCKER/coder-server)
 # Latest coder-server
 ### based on [codercom/code-server](https://github.com/codercom/code-server)
 ----
@@ -21,7 +21,3 @@ docker run -it lguzzon/coder-server bash
 ```Dockerfile
 FROM lguzzon/coder-server:latest
 ```
-
-----
-
-![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
