@@ -1,0 +1,17 @@
+services:
+  - docker
+
+before_script:
+  - docker run -it --rm -v "$(pwd)/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
+
+script:
+  - chmod +x "./scripts/travis/deploy.sh"
+  - export BUILD_TAG=lguzzon/code-server:$TRAVIS_COMMIT
+  - docker build . -t ${BUILD_TAG}
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh "./scripts/travis/deploy.sh"
+  on:
+    branch: master

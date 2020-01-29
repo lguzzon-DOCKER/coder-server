@@ -1,0 +1,12 @@
+*
+!**\.gitattributes
+!**\.gitignore
+!**\.md
+!**\.sh
+
+!/Dockerfile
+!/\.editorconfig
+!/\.travis\.yml
+!/LICENSE
+!/scripts/
+!/scripts/travis/

@@ -1,0 +1,17 @@
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+**/* text=auto
+
+# All these files must use LF
+Dockerfile text eol=lf
+LICENSE text eol=lf
+.editorconfig text eol=lf
+.travis.yml text eol=lf
+
+**/.gitattributes text eol=lf
+**/.gitignore text eol=lf
+**/*.csv text eol=lf
+**/*.redis text eol=lf
+**/*.sh text eol=lf
+
+**/*.md text eol=lf
