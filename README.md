@@ -1,4 +1,5 @@
-[![Travis (.org) branch](https://img.shields.io/travis/lguzzon-DOCKER/coder-server/master)](https://travis-ci.org/travis/lguzzon-DOCKER/coder-server)
+[![Travis (.org) branch](https://img.shields.io/travis/lguzzon-DOCKER/code-server/master)](https://travis-ci.org/lguzzon-DOCKER/coder-server)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lguzzon/code-server)](https://hub.docker.com/repository/docker/lguzzon/coder-server)
 # Latest coder-server
 ### based on [codercom/code-server](https://github.com/codercom/code-server)
 ----
