@@ -6,7 +6,7 @@ before_script:
 
 script:
   - chmod +x "./scripts/travis/deploy.sh"
-  - export BUILD_TAG="$TRAVIS_REPO_SLUG:$TRAVIS_COMMIT:travis"
+  - export BUILD_TAG="$TRAVIS_REPO_SLUG-$TRAVIS_COMMIT-travis"
   - docker build . -t "${BUILD_TAG}"
   - docker history "${BUILD_TAG}"
 
