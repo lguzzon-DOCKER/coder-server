@@ -5,7 +5,7 @@
 ----
 ### Pull from Docker Hub
 ```
-docker pull lguzzon/code-server:latest
+docker pull lguzzon/coder-server:latest
 ```
 
 ### Or build from GitHub
