@@ -6,7 +6,8 @@ before_script:
 
 script:
   - chmod +x "./scripts/travis/deploy.sh"
-  - export BUILD_TAG=lguzzon/code-server:$TRAVIS_COMMIT
+  - export BUILD_TAG=$(echo "$TRAVIS_COMMIT-travis" | tr '[:upper:]' '[:lower:]')
+  - echo "BUILD_TAG=$BUILD_TAG"
   - docker build . -t "${BUILD_TAG}"
   - docker history "${BUILD_TAG}"
 
