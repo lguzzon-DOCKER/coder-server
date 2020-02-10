@@ -6,8 +6,8 @@ echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
 
 readonly NEW_BUILD_TAG=$(echo "$DOCKER_USER/$TRAVIS_REPO_NAME" | tr '[:upper:]' '[:lower:]')
 
-docker tag  "$BUILD_TAG" "$NEW_BUILD_TAG:latest"
+docker tag "$BUILD_TAG" "$NEW_BUILD_TAG:latest"
 docker push "$NEW_BUILD_TAG:latest"
 
-docker tag  "$BUILD_TAG" "$NEW_BUILD_TAG:$TRAVIS_COMMIT"
+docker tag "$BUILD_TAG" "$NEW_BUILD_TAG:$TRAVIS_COMMIT"
 docker push "$NEW_BUILD_TAG:$TRAVIS_COMMIT"
